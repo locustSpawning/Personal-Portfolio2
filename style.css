@@ -72,5 +72,7 @@ li {
 
 #portfolio-header-list-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 4em;
+    padding: 2em;
 }
