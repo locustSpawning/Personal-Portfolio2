@@ -21,6 +21,9 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    position: relative;
+    height: 100vh;
+    background-color: rgb(250, 250, 242);
 }
 /*
   5. Improve media defaults
@@ -131,8 +134,7 @@ li {
 
 .section-title {
     display: flex;
-    justify-content: space-a;
     align-items: center;
-    padding: 2em;
+    padding: 2em 0em 2em 10em;
     gap: 3em;
 }
