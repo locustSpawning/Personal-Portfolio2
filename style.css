@@ -121,3 +121,18 @@ li {
     font-weight: 400;
     font-style: normal;
 }
+
+.title-text {
+    font-family: var(--ff-Courier);
+    font-size: var(--fs-600);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-a;
+    align-items: center;
+    padding: 2em;
+    gap: 3em;
+}
