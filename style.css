@@ -87,3 +87,7 @@ li {
     height: 2em;
     width: auto;
 }
+
+.auto-type {
+    color: salmon;
+}
