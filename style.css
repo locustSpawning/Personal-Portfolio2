@@ -12,7 +12,6 @@
 * {
     margin: 0;
     font-size: 100%;
-    font-family: 'Poppins', sans-serif;
 }
 /*
   Typographic tweaks!
@@ -71,7 +70,26 @@ li {
 
 /* -------------------- PERSONAL PORTFOLIO SPECIFICS START HERE --------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-Courier: 'Courier Prime', monospace;
+
+    --fs-650: 3rem; /*48px*/
+    --fs-600: 2rem; /*32px*/
+    --fs-500: 1.75rem; /*28px*/
+    --fs-450: 1.5rem; /*24px*/
+    --fs-400: 1.125rem; /*18px*/
+    --fs-300: 1rem; /*16px*/
+    --fs-200: 0.875rem; /*14px*/
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+}
+
+/* -------------------- Header --------------------*/
 
 #portfolio-header-list-links,
 #portfolio-header {
@@ -81,6 +99,8 @@ li {
     padding: 1em 2em;
     align-items: center;
     justify-content: space-between;
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-regular);
 }
 
 #cl-logo-image {
@@ -88,6 +108,16 @@ li {
     width: auto;
 }
 
-.auto-type {
+#auto-type {
     color: salmon;
+}
+
+.typing-effect {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    font-family: var(--ff-Courier);
+    font-size: var(--fs-500);
+    font-weight: 400;
+    font-style: normal;
 }
