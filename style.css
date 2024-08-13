@@ -23,7 +23,7 @@ body {
     -webkit-font-smoothing: antialiased;
     position: relative;
     height: 100vh;
-    background-color: rgb(250, 250, 242);
+    background-color: #f6eee3;
 }
 /*
   5. Improve media defaults
@@ -101,7 +101,8 @@ a {
 /* -------------------- Header --------------------*/
 
 #portfolio-header-list-links,
-#portfolio-header {
+#portfolio-header,
+#portfolio-footer {
     display: flex;
     flex-direction: row;
     gap: 4em;
@@ -134,11 +135,11 @@ a {
 }
 
 .landing-page {
-    min-height: 20em; /* this might need to change */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3em;
     gap: 3em;
 }
 
@@ -163,12 +164,12 @@ a {
     align-items: center;
     text-align: center;
     gap: 3em;
-    padding: 12em 0em 2em 10em;
+    padding: 8em 0em 2em 10em;
     overflow: hidden;
 }
 
 .ripped-paper-background {
-    background-image: url('images/ripped-paper-background.svg');
+    background-image: url('images/ripped-paper-background-short.svg');
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100%; */
@@ -220,4 +221,17 @@ a {
     font-weight: var(--fw-regular);
     font-size: var(--fs-400);
     padding: 4em 8em 3em;
+}
+
+/* -------------------- Contact --------------------*/
+
+#contact-section {
+    padding: 2em 4em 2em;
+    margin-bottom: 3em;
+}
+
+/* -------------------- Footer --------------------*/
+
+#portfolio-footer {
+    padding: 8em 0em 2em 10em;
 }
