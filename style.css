@@ -70,6 +70,12 @@ h6 {
 li {
     list-style-type: none;
 }
+/*
+  10. Remove line from links
+*/
+a {
+    text-decoration: none;
+}
 
 /* -------------------- PERSONAL PORTFOLIO SPECIFICS START HERE --------------------*/
 
@@ -172,22 +178,22 @@ li {
 /* -------------------- Work --------------------*/
 
 #work-section {
-    padding: 2em;
     font-family: var(--ff-poppins);
     font-size: var(--fs-500);
 }
 
 #work-section-grid {
-    padding: 2em 4em 2em;
     display: grid;
+    padding: 2em 4em 2em;
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3em;
+    /* grid-template-columns: repeat(2, 12rem); */
+    grid-template-columns: 200px 500px;
+    row-gap: 3em;
 }
 
 .image-container {
-    width: 100px;
-    height: 300px;
+    width: 150px;
+    height: 350px;
 }
 
 .project-preview {
@@ -199,7 +205,8 @@ li {
 .title-and-link {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    justify-items: flex-start;
+    gap: 1em;
 }
 
 /* -------------------- About --------------------*/
