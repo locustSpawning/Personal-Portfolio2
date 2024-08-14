@@ -113,6 +113,10 @@ a {
     font-weight: var(--fw-regular);
 }
 
+#portfolio-header-list-links li:hover {
+    color: salmon;
+}
+
 #cl-logo-image {
     height: 2em;
     width: auto;
@@ -214,6 +218,7 @@ a {
 
 #about-section {
     min-height: 30em; /* this might need to change */
+    padding-bottom: 4em;
 }
 
 #about-text {
@@ -226,12 +231,14 @@ a {
 /* -------------------- Contact --------------------*/
 
 #contact-section {
-    padding: 2em 4em 2em;
+    padding: 2em 0 4em;
     margin-bottom: 3em;
 }
 
 /* -------------------- Footer --------------------*/
 
 #portfolio-footer {
-    padding: 8em 0em 2em 10em;
+    padding: 4em 2em 4em;
+    display: flex;
+    justify-content: center;
 }
