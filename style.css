@@ -252,13 +252,18 @@ a:hover {
     padding-bottom: 4em;
 }
 
-#about-text {
+.about-text,
+.learning-text {
     font-family: var(--ff-poppins);
     font-weight: var(--fw-regular);
     font-size: var(--fs-400);
-    padding: 4em 8em 3em;
+    padding: 4em 8em 0em;
     max-width: 80em;
     line-height: 1.9;
+}
+
+.learning-text {
+    font-size: var(--fs-600);
 }
 
 /* -------------------- Connect --------------------*/
