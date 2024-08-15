@@ -25,8 +25,19 @@ if (toTop != null) {
         window.location.href = '#';
     });
 }
-if (toTopMini != null) {
-    toTopMini.addEventListener('click', (e) => {
-        window.location.href = '#';
-    });
-}
+
+// Make arrow move on hover
+
+// let linkArrow = document.getElementById('view-work-link');
+
+// linkArrow.addEventListener('mouseenter', (event) => {
+//     setTimeout(function () {
+//         linkArrow.innerHTML = '&nbsp;View work&nbsp; ➤';
+//     }, 250);
+// });
+
+// linkArrow.addEventListener('mouseleave', (event) => {
+//     setTimeout(function () {
+//         linkArrow.innerHTML = 'View work ➤';
+//     }, 250);
+// });

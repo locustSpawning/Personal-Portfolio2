@@ -76,6 +76,7 @@ li {
 a {
     text-decoration: none;
     color: black;
+    transition: 0.2s;
 }
 
 /* 11. Scroll behavior */
@@ -106,6 +107,12 @@ html {
 
 /* -------------------- Header --------------------*/
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 #portfolio-header-list-links,
 #portfolio-header,
 #portfolio-footer {
@@ -117,6 +124,14 @@ html {
     justify-content: space-between;
     font-family: var(--ff-poppins);
     font-weight: var(--fw-regular);
+}
+
+#portfolio-header-list-links li {
+    transition: 0.2s;
+}
+
+#portfolio-header {
+    background-color: #f6eee3;
 }
 
 #portfolio-header-list-links li:hover,
@@ -221,6 +236,15 @@ a:hover {
     gap: 1em;
 }
 
+.view-work-link {
+    transition: 300ms;
+    color: lightgray;
+}
+
+.view-work-link:hover {
+    color: salmon;
+}
+
 /* -------------------- About --------------------*/
 
 #about-section {
@@ -233,13 +257,36 @@ a:hover {
     font-weight: var(--fw-regular);
     font-size: var(--fs-400);
     padding: 4em 8em 3em;
+    max-width: 80em;
+    line-height: 1.9;
 }
 
-/* -------------------- Contact --------------------*/
+/* -------------------- Connect --------------------*/
 
-#contact-section {
+#connect-section {
     padding: 2em 0 4em;
     margin-bottom: 3em;
+}
+
+.connect-img-link-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    height: 75px;
+    width: auto;
+}
+
+.logo-image:hover {
+    color: salmon;
+}
+
+.connect-link {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-regular);
 }
 
 /* -------------------- Footer --------------------*/
@@ -248,4 +295,21 @@ a:hover {
     padding: 4em 2em 4em;
     display: flex;
     justify-content: center;
+}
+
+#footer-button {
+    font-family: var(--ff-Courier);
+    font-size: var(--fs-400);
+    font-weight: 400;
+    padding: 1em;
+    background-color: #f6eee3;
+    border-width: 3px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+#footer-button:hover {
+    background-color: white;
+    color: salmon;
 }

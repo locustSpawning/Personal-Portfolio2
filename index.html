@@ -9,8 +9,8 @@
         <script defer src="index.js"></script>
     </head>
     <body>
-        <header id="portfolio-header">
-            <a href="index.html"
+        <header id="portfolio-header" class="sticky">
+            <a href="#"
                 ><img
                     id="cl-logo-image"
                     src="images/cl-logo.svg"
@@ -20,7 +20,7 @@
                 <a href="#"><li>Home</li></a>
                 <a href="#work-section"><li>Work</li></a>
                 <a href="#about-section"><li>About</li></a>
-                <a href="#contact-section"><li>Contact</li></a>
+                <a href="#connect-section"><li>Connect</li></a>
             </ul>
         </header>
 
@@ -52,7 +52,9 @@
                 >
                     <div class="title-and-link">
                         <h1>Rosie's Farm Market | Website Redesign & Launch</h1>
-                        <a href="#">View work ></a>
+                        <a class="view-work-link" href="#"
+                            >➤ View work &nbsp;&nbsp;&nbsp;&nbsp;</a
+                        >
                     </div>
                 </div>
                 <div class="image-container">
@@ -65,7 +67,9 @@
                 <div class="grid-contains-image-title-link" id="art-history">
                     <div class="title-and-link">
                         <h1>Art History | Case Study</h1>
-                        <a href="#">View work ></a>
+                        <a class="view-work-link" href="#"
+                            >➤ View work &nbsp;&nbsp;&nbsp;&nbsp;</a
+                        >
                     </div>
                 </div>
 
@@ -82,7 +86,9 @@
                             STEM Program Design & Development | Real World
                             Project
                         </h1>
-                        <a href="#">View work ></a>
+                        <a class="view-work-link" href="#"
+                            >➤ View work &nbsp;&nbsp;&nbsp;&nbsp;</a
+                        >
                     </div>
                 </div>
             </div>
@@ -109,23 +115,92 @@
             </p>
         </div>
 
-        <div class="section-title ripped-paper-background" id="contact-section">
+        <div class="section-title ripped-paper-background" id="connect-section">
             <div class="section-name-streak">
-                <h2 class="title-text">Contact</h2>
+                <h2 class="title-text">Connect</h2>
                 <img
                     class="paint-streak"
                     src="images/paint-streak-3.svg"
                     alt="decorative-line"
                 />
             </div>
-            <p>There will be a link here probably</p>
-            <p>There will be a link here probably</p>
-            <p>There will be a link here probably</p>
-            <p>There will be a link here probably</p>
+            <div class="connect-img-link-div">
+                <img
+                    class="logo-image"
+                    src="images/linkedin.png"
+                    alt="linkedin-logo"
+                /><a
+                    class="connect-link"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/c-leonhardt/"
+                    id="linkedIn-link"
+                    >LinkedIn</a
+                >
+            </div>
+
+            <div class="connect-img-link-div">
+                <img
+                    class="logo-image"
+                    src="images/github.png"
+                    alt="github-logo"
+                /><a
+                    class="connect-link"
+                    target="_blank"
+                    id="github-link"
+                    class="text-desktop-large-button contact-page-link"
+                    href="https://github.com/locustSpawning?tab=repositories"
+                >
+                    Github
+                </a>
+            </div>
+            <div class="connect-img-link-div">
+                <img
+                    class="logo-image"
+                    src="images/behance.png"
+                    alt="behance-logo"
+                />
+                <a
+                    class="connect-link"
+                    target="_blank"
+                    href="https://www.behance.net/chelsealeonhar"
+                    id="behance-link"
+                    class="text-desktop-large-button contact-page-link"
+                >
+                    Behance
+                </a>
+            </div>
+
+            <div class="connect-img-link-div">
+                <img
+                    class="logo-image"
+                    src="images/gmail.png"
+                    alt="gmail-logo"
+                />
+                <button
+                    id="copy-gmail-btn"
+                    class="gmail-logo-button contact-page-link"
+                >
+                    <p id="gmail-text">Copy email to clipboard</p>
+                </button>
+                <div id="copy-email-messages-main-div">
+                    <div id="success-div">
+                        <p class="text-desktop-large-button">
+                            ✦ Email copied to Clipboard! ✦
+                        </p>
+                    </div>
+
+                    <div id="failed-div">
+                        <p class="text-desktop-large-button">
+                            Email not copied.. <br />
+                            chelsleonhardt@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer id="portfolio-footer">
-            <button id="footer-button">Return to top</button>
+            <button id="footer-button">• Return to top •</button>
         </footer>
 
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
