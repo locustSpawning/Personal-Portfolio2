@@ -75,6 +75,12 @@ li {
 */
 a {
     text-decoration: none;
+    color: black;
+}
+
+/* 11. Scroll behavior */
+html {
+    scroll-behavior: smooth;
 }
 
 /* -------------------- PERSONAL PORTFOLIO SPECIFICS START HERE --------------------*/
@@ -113,7 +119,8 @@ a {
     font-weight: var(--fw-regular);
 }
 
-#portfolio-header-list-links li:hover {
+#portfolio-header-list-links li:hover,
+a:hover {
     color: salmon;
 }
 
