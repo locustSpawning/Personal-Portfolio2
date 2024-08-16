@@ -182,6 +182,11 @@ a:hover,
     gap: 3em;
 }
 
+#sub-heading {
+    font-size: var(--fs-400);
+    color: var(--color-accent-1);
+}
+
 #leaf-ink-impression-landing {
     height: 8em;
     width: auto;
@@ -364,16 +369,18 @@ a:hover,
 /* -------------------- Footer --------------------*/
 
 #portfolio-footer {
-    padding: 4em 2em 4em;
+    padding: 4em 2em 0.5em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 #footer-button {
     font-family: var(--ff-Source);
     font-size: var(--fs-400);
     color: var(--color-black);
-
     font-weight: 400;
     width: 400px;
     background-color: transparent;
@@ -386,6 +393,19 @@ a:hover,
     background-image: url('images/paint-streak-footer.svg');
     background-size: cover;
     color: white;
+}
+
+#footer-ink-leaf {
+    height: 15em;
+    width: auto;
+    transform: rotate(-32deg);
+    margin-top: -65px;
+}
+
+#thanks {
+    margin-top: -65px;
+    text-align: center;
+    color: var(--color-accent-1);
 }
 
 /* -------------------- Stylization General --------------------*/
