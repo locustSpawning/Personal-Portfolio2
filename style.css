@@ -573,7 +573,7 @@ a:hover,
         text-align: center;
     }
     #work-section-grid {
-        padding: 0.5em 4em 2em;
+        padding: 0.5em 2em 2em;
         grid-template-columns: 1fr;
         row-gap: 1em;
         text-align: center;
@@ -582,7 +582,7 @@ a:hover,
     }
 
     .image-container {
-        width: 350px;
+        width: 325px;
         height: 80px;
     }
     .image-container:nth-child(3),
