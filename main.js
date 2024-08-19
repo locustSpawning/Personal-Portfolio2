@@ -16,32 +16,6 @@ var typed = new Typed(textAnimationGoesHere, {
     loop: true,
 });
 
-// Return to top button
-
-const toTop = document.querySelector('#footer-button');
-
-if (toTop != null) {
-    toTop.addEventListener('click', (e) => {
-        window.location.href = '#';
-    });
-}
-
-// Make arrow move on hover
-
-// let linkArrow = document.getElementById('view-work-link');
-
-// linkArrow.addEventListener('mouseenter', (event) => {
-//     setTimeout(function () {
-//         linkArrow.innerHTML = '&nbsp;View work&nbsp; ➤';
-//     }, 250);
-// });
-
-// linkArrow.addEventListener('mouseleave', (event) => {
-//     setTimeout(function () {
-//         linkArrow.innerHTML = 'View work ➤';
-//     }, 250);
-// });
-
 // Copy gmail to clipboard
 
 let successDiv = document.getElementById('success-div');
@@ -71,4 +45,71 @@ copyEmailButton.addEventListener('click', () => {
             failDiv.style.transition = 'opacity 300ms';
         }
     );
+});
+
+// Import Headers
+
+$(function () {
+    $('#desktop-header-div').append(
+        jQuery.parseHTML(`
+                <header id="portfolio-header" class="sticky">
+            <a href="#"
+                ><img
+                    id="cl-logo-image"
+                    src="images/cl-logo.svg"
+                    alt="CL-logo-home-link"
+            /></a>
+            <ul id="portfolio-header-list-links">
+                <a href="#"><li>Home</li></a>
+                <a href="#work-section"><li>Work</li></a>
+                <a href="#about-section"><li>About</li></a>
+                <a href="#connect-section"><li>Connect</li></a>
+            </ul>
+        </header>
+                `)
+    );
+});
+
+$(function () {
+    $('#mobile-header-div').append(
+        jQuery.parseHTML(`
+                 <div id="Mobile-menu" class="sticky">
+                <label class="hamburger-menu">
+                    <input type="checkbox" />
+                </label>
+                <aside class="sidebar">
+                    <nav id="portfolio-mobile-header-list-links">
+                        <a href="#"><li>• Home</li></a>
+                        <a href="#work-section"><li>• Work</li></a>
+                        <a href="#about-section"><li>• About</li></a>
+                        <a href="#connect-section"><li>• Connect</li></a>
+                    </nav>
+                </aside>
+            </div>
+                `)
+    );
+});
+
+// Import Footers
+
+$(function () {
+    $('#portfolio-footer-div').append(
+        jQuery.parseHTML(`
+                  <footer id="portfolio-footer" >
+            <button id="footer-button">• Return to top •</button>
+            <img id="footer-ink-leaf" src="images/leaf-ink-footer.svg" alt="" />
+            <p id="thanks">~ Thanks for visiting!</p>
+        </footer>
+                `)
+    );
+
+    // Return to top button
+
+    const toTop = document.querySelector('#footer-button');
+
+    if (toTop != null) {
+        toTop.addEventListener('click', (e) => {
+            window.location.href = '#';
+        });
+    }
 });

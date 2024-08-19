@@ -6,39 +6,16 @@
         <title>Chelsea Leonhardt Personal Portfolio</title>
         <link rel="stylesheet" href="style.css" />
         <script defer src="main.js"></script>
-        <script defer src="index.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
-        <header id="portfolio-header" class="sticky">
-            <a href="#"
-                ><img
-                    id="cl-logo-image"
-                    src="images/cl-logo.svg"
-                    alt="CL-logo-home-link"
-            /></a>
-            <ul id="portfolio-header-list-links">
-                <a href="#"><li>Home</li></a>
-                <a href="#work-section"><li>Work</li></a>
-                <a href="#about-section"><li>About</li></a>
-                <a href="#connect-section"><li>Connect</li></a>
-            </ul>
-        </header>
+        <div id="desktop-header-div"></div>
 
-        <section id="Mobile-menu">
-            <div class="sticky">
-                <label class="hamburger-menu">
-                    <input type="checkbox" />
-                </label>
-                <aside class="sidebar">
-                    <nav id="portfolio-mobile-header-list-links">
-                        <a href="#"><li>• Home</li></a>
-                        <a href="#work-section"><li>• Work</li></a>
-                        <a href="#about-section"><li>• About</li></a>
-                        <a href="#connect-section"><li>• Connect</li></a>
-                    </nav>
-                </aside>
-            </div>
-        </section>
+        <div id="mobile-header-div"></div>
 
         <section id="mobile-logo">
             <img
@@ -89,7 +66,9 @@
                             for a Local Farmers Market
                         </h1>
                         <p class="accent-text-color">• Real World Project •</p>
-                        <a class="view-work-link" href="#">➤ View work</a>
+                        <a class="view-work-link" href="case-study1.html"
+                            >➤ View work</a
+                        >
                     </div>
                 </div>
                 <div class="image-container">
@@ -143,17 +122,18 @@
             </div>
             <p class="about-text">
                 A creative at heart, I've explored many paths from life science,
-                STEM education, coding, illustration, design, and coding (just
+                STEM education, coding, illustration, design, and writing (just
                 to name a few). I think my biggest takeaway from reflecting on
-                my experiences is that ..
+                my experiences is that . . .
             </p>
             <p class="learning-text">• I love learning •</p>
             <p class="about-text">
                 I enjoy exploring new tools and technology while also gaining
                 insight on how people benefit from them. I like using this
-                information to help those around me, <b>solve problems,</b> and
-                <b>create simple</b> and <b>effective solutions</b> whether it
-                be websites, slideshows, ebooks, or infographics.
+                information to help those around me by
+                <b>solving problems</b> and <b>creating simple</b> and
+                <b>effective solutions</b> whether it be websites, slideshows,
+                ebooks, or infographics.
             </p>
             <img
                 id="leaf-ink-impression-about"
@@ -245,11 +225,7 @@
             </div>
         </div>
 
-        <footer id="portfolio-footer">
-            <button id="footer-button">• Return to top •</button>
-            <img id="footer-ink-leaf" src="images/leaf-ink-footer.svg" alt="" />
-            <p id="thanks">~ Thanks for visiting!</p>
-        </footer>
+        <div id="portfolio-footer-div"></div>
 
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     </body>
