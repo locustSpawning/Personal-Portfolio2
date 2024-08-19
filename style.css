@@ -568,6 +568,10 @@ a:hover,
 /* -------------------- Media Queries --------------------*/
 
 @media (max-width: 56em) {
+    .typing-effect {
+        padding-top: 3em;
+        text-align: center;
+    }
     #work-section-grid {
         padding: 0.5em 4em 2em;
         grid-template-columns: 1fr;
@@ -594,21 +598,24 @@ a:hover,
     #portfolio-header {
         display: none;
     }
+    .typing-effect {
+        padding-top: 1em;
+    }
     #Mobile-menu {
         display: flex;
     }
     #mobile-logo {
         display: flex;
     }
-    .typing-effect {
-        padding-top: 1em;
-        text-align: center;
-    }
+
     .section-name-streak {
         flex-direction: column;
         justify-content: center;
         padding: 3em 0em 0em 0em;
         gap: 0.5em;
+    }
+    .about-text {
+        padding: 2em 4em 2em;
     }
 }
 
