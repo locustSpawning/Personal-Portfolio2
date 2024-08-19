@@ -354,9 +354,6 @@ a:hover,
     background-image: url('images/ripped-paper-background-short.svg');
     background-repeat: no-repeat;
     background-size: cover;
-
-    /* height: 100%; */
-    /* padding-bottom: 60em; */
 }
 
 /* -------------------- Work --------------------*/
@@ -371,7 +368,6 @@ a:hover,
     display: grid;
     padding: 2em 4em 2em;
     justify-content: center;
-    /* grid-template-columns: repeat(2, 12rem); */
     grid-template-columns: 200px 500px;
     row-gap: 3em;
 }
@@ -581,6 +577,13 @@ a:hover,
     }
     .typing-effect {
         padding-top: 1em;
+        text-align: center;
+    }
+    .section-name-streak {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3em 0em 0em 0em;
+        gap: 0.5em;
     }
 }
 @media (min-width: 37em) {
