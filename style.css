@@ -149,8 +149,10 @@ a:hover,
 }
 
 #cl-logo-image {
-    height: 2em;
-    width: auto;
+    max-height: 4em;
+    min-height: 4em;
+    max-width: 4em;
+    min-width: 4em;
 }
 
 /* -------------------- Header - MOBILE --------------------*/
@@ -169,7 +171,6 @@ a:hover,
 .hamburger-menu {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
     padding: 25px;
-
     display: flex;
     flex-direction: column;
     gap: var(--hamburger-gap);
@@ -237,9 +238,10 @@ a:hover,
     padding: 25px;
 
     translate: 1000%;
-    padding: 1rem 8rem 1rem 9rem;
+    padding: 1rem;
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-    background-color: var(--foreground);
+    /* background-color: var(--foreground); */
+    background: linear-gradient(to bottom, var(--foreground), black);
     color: var(--background);
     max-width: 10rem;
     min-width: 10rem;
@@ -261,7 +263,7 @@ a:hover,
 
 #portfolio-mobile-header-list-links li {
     color: var(--background);
-    padding-top: 1rem;
+    padding-top: 1rem 1.5rem 1rem 0.5rem;
     font-family: var(--ff-poppins);
     font-weight: var(--fw-regular);
     font-size: var(--fs-450);
@@ -270,6 +272,20 @@ a:hover,
 
 #portfolio-mobile-header-list-links li:first-child {
     padding-top: 3rem;
+}
+
+#mobile-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 9rem 2rem 2rem 2rem;
+    align-items: center;
+    align-content: center;
+}
+
+#cl-logo-image-mobile {
+    height: 3em;
+    width: auto;
 }
 /* -------------------- Landing --------------------*/
 
@@ -286,6 +302,7 @@ a:hover,
     color: var(--color-black);
     font-weight: 400;
     font-style: normal;
+    padding-top: 6em;
 }
 
 .landing-page {
@@ -294,6 +311,7 @@ a:hover,
     justify-content: center;
     align-items: center;
     gap: 3em;
+    margin-top: 2em;
 }
 
 #sub-heading {
@@ -546,5 +564,30 @@ a:hover,
     * {
         scrollbar-color: #639bad;
         scrollbar-width: auto;
+    }
+}
+
+/* -------------------- Media Queries --------------------*/
+
+@media (max-width: 37.1em) {
+    #portfolio-header {
+        display: none;
+    }
+    #Mobile-menu {
+        display: flex;
+    }
+    #mobile-logo {
+        display: flex;
+    }
+    .typing-effect {
+        padding-top: 1em;
+    }
+}
+@media (min-width: 37em) {
+    #Mobile-menu {
+        display: none !important;
+    }
+    #mobile-logo {
+        display: none !important;
     }
 }
