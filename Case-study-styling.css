@@ -2,10 +2,52 @@
 
 @import url(“style.css”);
 
+#case-study-nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
 .case-study-main-title {
     font-family: var(--ff-poppins);
     font-weight: var(--fw-regular);
     color: var(--color-black);
     font-size: var(--fs-600);
     padding: 6em;
+}
+
+.case-study-quote {
+    font-style: italic;
+    font-family: var(--ff-Source);
+    font-weight: var(--fw-semi-bold);
+    color: var(--color-black);
+    font-size: var(--fs-500);
+    text-align: center;
+    padding: 4em 6em 4em 6em;
+}
+
+.paragraph-text {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-regular);
+    color: var(--color-black);
+    font-size: var(--fs-400);
+    padding: 1em 6em 1em 6em;
+}
+
+.work-flow-background {
+    background-color: #eeeee3ff;
+}
+
+.sub-title {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-semi-bold);
+    color: var(--color-black);
+    font-size: var(--fs-450);
+    padding: 3em 0em 0em 4em;
+}
+
+.figma-web-link {
+    color: var(--color-black);
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
