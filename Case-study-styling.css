@@ -1,0 +1,11 @@
+/* -------------------- Case Study Styling --------------------*/
+
+@import url(“style.css”);
+
+.case-study-main-title {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-regular);
+    color: var(--color-black);
+    font-size: var(--fs-600);
+    padding: 6em;
+}
