@@ -41,7 +41,8 @@
     align-items: center;
 }
 
-.sub-title {
+.sub-title,
+#research-data {
     font-family: var(--ff-poppins);
     font-weight: var(--fw-semi-bold);
     color: var(--color-black);
@@ -54,6 +55,47 @@
     text-underline-offset: 6px;
 }
 
+.extra-padding-bottom {
+    padding-bottom: 8em;
+}
+
+#research-data {
+    font-size: var(--fs-400);
+    padding: 6em;
+    border-spacing: 0.3em;
+    text-align: left;
+}
+
+.table-heading {
+    background-color: var(--color-black);
+    color: var(--color-paper);
+}
+
+.table-sub-heading {
+    background-color: var(--color-accent-1);
+    color: var(--color-paper);
+}
+
+.table-data {
+    background-color: lightgray;
+    color: var(--color-black);
+}
+
+.focus-heading {
+    background-color: #fa8072;
+    color: #902418;
+}
+
+.focus-data {
+    background-color: #f8c9c4;
+    color: var(--color-black);
+}
+
+th,
+td {
+    padding: 15px;
+    border-radius: 2px;
+}
 /* -------------------- Responsive Images  --------------------*/
 
 .size-images {
@@ -67,6 +109,11 @@
 
 .add-padding {
     padding: 6em;
+}
+
+.adjust-top-bottom-padding {
+    padding-top: 6em;
+    padding-bottom: 4em;
 }
 
 #responsive-image-1 {
@@ -89,6 +136,10 @@
     .case-study-main-title {
         padding: 1em;
     }
+    .adjust-top-bottom-padding {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
     .case-study-main-title {
         padding-top: 4em;
         padding-right: 2em;
@@ -110,6 +161,9 @@
     #responsive-image-3 {
         content: url('images/rosies-usertesting-feedback-mobile.png');
         max-width: 400px;
+    }
+    .extra-padding-bottom {
+        padding-bottom: 10em;
     }
 }
 @media (max-width: 35em) {
