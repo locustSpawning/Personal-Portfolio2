@@ -36,6 +36,9 @@
 
 .work-flow-background {
     background-color: #eeeee3ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sub-title {
@@ -43,11 +46,77 @@
     font-weight: var(--fw-semi-bold);
     color: var(--color-black);
     font-size: var(--fs-450);
-    padding: 3em 0em 0em 4em;
 }
 
 .figma-web-link {
     color: var(--color-black);
     text-decoration: underline;
     text-underline-offset: 6px;
+}
+
+/* -------------------- Responsive Images  --------------------*/
+
+.size-images {
+    max-width: 1200px;
+    max-height: auto;
+}
+
+.height-adjust {
+    max-height: 800px;
+}
+
+.add-padding {
+    padding: 6em;
+}
+
+#responsive-image-1 {
+    content: url('images/rosies-responsive-image-1-desktop.png');
+}
+
+#responsive-image-2 {
+    content: url('images/Rosies\ Notes-primary-flow-desktop.png');
+}
+
+#responsive-image-3 {
+    content: url('images/rosies-usertesting-feedback-desktop.png');
+}
+
+/* -------------------- Media Queries --------------------*/
+
+@media (max-width: 56em) {
+    .case-study-quote,
+    .paragraph-text,
+    .case-study-main-title {
+        padding: 1em;
+    }
+    .case-study-main-title {
+        padding-top: 4em;
+        padding-right: 2em;
+    }
+    .size-images {
+        max-width: 800px;
+    }
+    #Rosies-persona,
+    #rosies-hifi {
+        padding: 0;
+    }
+    #responsive-image-1 {
+        content: url('images/rosies-responsive-image-1-mobile.png');
+    }
+    #responsive-image-2 {
+        content: url('images/Rosies\ Notes-primary-flow-mobile.png');
+    }
+
+    #responsive-image-3 {
+        content: url('images/rosies-usertesting-feedback-mobile.png');
+        max-width: 400px;
+    }
+}
+@media (max-width: 35em) {
+    .size-images {
+        max-width: 400px;
+    }
+    #rosies-IA-image {
+        padding: 0;
+    }
 }
