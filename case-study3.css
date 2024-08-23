@@ -3,8 +3,8 @@
 /* -------------------- Responsive Images  --------------------*/
 
 #responsive-image-hero {
-    content: url('#');
-    padding-top: 1em;
+    content: url('images/STEM-hero-desktop.svg');
+    padding-top: 6em;
 }
 
 #responsive-image-1 {
@@ -27,7 +27,7 @@
         padding: 1em 0 1em 0;
     }
     #responsive-image-hero {
-        content: url('#');
+        content: url('images/STEM-hero-mobile.svg');
         padding-top: 5em;
     }
 

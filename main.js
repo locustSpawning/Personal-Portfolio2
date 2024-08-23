@@ -4,7 +4,7 @@ $(function () {
     $('#desktop-header-div').append(
         jQuery.parseHTML(`
                 <header id="portfolio-header" class="sticky">
-            <a href="#"
+            <a href="index.html#"
                 ><img
                     id="cl-logo-image"
                     src="images/cl-logo.svg"

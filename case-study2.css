@@ -3,7 +3,7 @@
 /* -------------------- Responsive Images  --------------------*/
 
 #responsive-image-hero {
-    content: url('#');
+    content: url('images/art-history-hero-desktop.svg');
     padding-top: 1em;
 }
 
@@ -27,7 +27,7 @@
         padding: 1em 0 1em 0;
     }
     #responsive-image-hero {
-        content: url('#');
+        content: url('images/art-history-hero-mobile.svg');
         padding-top: 5em;
     }
 
