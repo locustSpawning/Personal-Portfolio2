@@ -1,0 +1,50 @@
+/* -------------------- STEM Curriculum Specifics  --------------------*/
+
+/* -------------------- Responsive Images  --------------------*/
+
+#responsive-image-hero {
+    content: url('#');
+    padding-top: 1em;
+}
+
+#responsive-image-1 {
+    content: url('#');
+}
+
+#responsive-image-2 {
+    content: url('#');
+}
+
+#responsive-image-3 {
+    content: url('#');
+}
+
+/* -------------------- Media Queries --------------------*/
+
+@media (max-width: 56em) {
+    #Rosies-persona,
+    #rosies-hifi {
+        padding: 1em 0 1em 0;
+    }
+    #responsive-image-hero {
+        content: url('#');
+        padding-top: 5em;
+    }
+
+    #responsive-image-1 {
+        content: url('#');
+    }
+    #responsive-image-2 {
+        content: url('#');
+    }
+
+    #responsive-image-3 {
+        content: url('#');
+        max-width: 400px;
+    }
+}
+@media (max-width: 35em) {
+    #rosies-IA-image {
+        padding: 0;
+    }
+}

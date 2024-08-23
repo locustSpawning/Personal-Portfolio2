@@ -132,23 +132,6 @@ td {
     padding-bottom: 4em;
 }
 
-#responsive-image-hero {
-    content: url('images/rosies-scrapbookpage.svg');
-    padding-top: 1em;
-}
-
-#responsive-image-1 {
-    content: url('images/rosies-responsive-image-1-desktop.png');
-}
-
-#responsive-image-2 {
-    content: url('images/Rosies\ Notes-primary-flow-desktop.png');
-}
-
-#responsive-image-3 {
-    content: url('images/rosies-usertesting-feedback-desktop.png');
-}
-
 /* -------------------- Media Queries --------------------*/
 
 @media (max-width: 56em) {
@@ -171,26 +154,6 @@ td {
     .size-images {
         max-width: 800px;
     }
-    #Rosies-persona,
-    #rosies-hifi {
-        padding: 1em 0 1em 0;
-    }
-    #responsive-image-hero {
-        content: url('images/rosies-scrapbookpage-mobile.svg');
-        padding-top: 5em;
-    }
-
-    #responsive-image-1 {
-        content: url('images/rosies-responsive-image-1-mobile.png');
-    }
-    #responsive-image-2 {
-        content: url('images/Rosies\ Notes-primary-flow-mobile.png');
-    }
-
-    #responsive-image-3 {
-        content: url('images/rosies-usertesting-feedback-mobile.png');
-        max-width: 400px;
-    }
     .extra-padding-bottom {
         padding-bottom: 10em;
     }
@@ -198,9 +161,6 @@ td {
 @media (max-width: 35em) {
     .size-images {
         max-width: 400px;
-    }
-    #rosies-IA-image {
-        padding: 0;
     }
 }
 
