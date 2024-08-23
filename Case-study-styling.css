@@ -115,6 +115,10 @@ td {
     max-height: auto;
 }
 
+.size-hero {
+    width: 100%;
+}
+
 .height-adjust {
     max-height: 800px;
 }
@@ -126,6 +130,11 @@ td {
 .adjust-top-bottom-padding {
     padding-top: 6em;
     padding-bottom: 4em;
+}
+
+#responsive-image-hero {
+    content: url('images/rosies-scrapbookpage.svg');
+    padding-top: 1em;
 }
 
 #responsive-image-1 {
@@ -166,6 +175,11 @@ td {
     #rosies-hifi {
         padding: 1em 0 1em 0;
     }
+    #responsive-image-hero {
+        content: url('images/rosies-scrapbookpage-mobile.svg');
+        padding-top: 5em;
+    }
+
     #responsive-image-1 {
         content: url('images/rosies-responsive-image-1-mobile.png');
     }
