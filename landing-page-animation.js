@@ -32,7 +32,7 @@ function fadeOut(currentDiv) {
 
 let copyEmailButton = document.getElementById('copy-gmail-btn');
 copyEmailButton.addEventListener('click', () => {
-    navigator.clipboard.writeText('chelsleonhardt@gmail.com').then(
+    navigator.clipboard.writeText('missleonhardt1@gmail.com').then(
         () => {
             currentDiv = successDiv;
             successDiv.style.opacity = '1';
