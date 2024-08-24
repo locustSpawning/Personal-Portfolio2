@@ -8,15 +8,15 @@
 }
 
 #responsive-image-1 {
-    content: url('#');
+    content: url('images/Clearview\ Case\ Study-wireframes.png');
 }
 
 #responsive-image-2 {
-    content: url('#');
+    content: url('images/Clearview\ Case\ Study.png');
 }
 
 #responsive-image-3 {
-    content: url('#');
+    content: url('images/Clearview\ Primary\ Flow.png');
 }
 
 /* -------------------- Media Queries --------------------*/
@@ -32,14 +32,14 @@
     }
 
     #responsive-image-1 {
-        content: url('#');
+        content: url('images/Clearview\ Case\ Study-wireframes-mobile.png');
     }
     #responsive-image-2 {
-        content: url('#');
+        content: url('images/Clearview\ Case\ Study-mobile.png');
     }
 
     #responsive-image-3 {
-        content: url('#');
+        content: url('images/Clearview\ Primary\ Flow-mobile.png');
         max-width: 400px;
     }
 }

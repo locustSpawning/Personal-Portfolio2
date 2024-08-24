@@ -8,7 +8,7 @@
 }
 
 #responsive-image-1 {
-    content: url('#');
+    content: url('images/Art\ History.png');
 }
 
 #responsive-image-2 {
@@ -17,6 +17,10 @@
 
 #responsive-image-3 {
     content: url('#');
+}
+
+#responsive-image-4 {
+    content: url('images/Art\ History\ Notes-primary-flow.png');
 }
 
 /* -------------------- Media Queries --------------------*/
@@ -32,7 +36,7 @@
     }
 
     #responsive-image-1 {
-        content: url('#');
+        content: url('images/Art\ History-mobile.png');
     }
     #responsive-image-2 {
         content: url('#');
@@ -41,6 +45,9 @@
     #responsive-image-3 {
         content: url('#');
         max-width: 400px;
+    }
+    #responsive-image-4 {
+        content: url('images/Art\ History\ Notes-primary-flow-mobile.png');
     }
 }
 @media (max-width: 35em) {
