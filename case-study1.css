@@ -19,6 +19,10 @@
     content: url('images/rosies-usertesting-feedback-desktop.png');
 }
 
+#responsive-image-4 {
+    content: url('images/rosies-research.png');
+}
+
 /* -------------------- Media Queries --------------------*/
 
 @media (max-width: 56em) {
@@ -40,6 +44,10 @@
 
     #responsive-image-3 {
         content: url('images/rosies-usertesting-feedback-mobile.png');
+        max-width: 400px;
+    }
+    #responsive-image-4 {
+        content: url('images/rosies-research-mobile.png');
         max-width: 400px;
     }
 }

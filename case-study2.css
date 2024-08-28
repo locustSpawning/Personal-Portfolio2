@@ -12,11 +12,11 @@
 }
 
 #responsive-image-2 {
-    content: url('#');
+    content: url('images/Art\ History-user-testing.png');
 }
 
 #responsive-image-3 {
-    content: url('#');
+    content: url('images/Art\ History\ Notes-approve.png');
 }
 
 #responsive-image-4 {
@@ -39,13 +39,14 @@
         content: url('images/Art\ History-mobile.png');
     }
     #responsive-image-2 {
-        content: url('#');
-    }
-
-    #responsive-image-3 {
-        content: url('#');
+        content: url('images/Art\ History-user-testing-mobile.png');
         max-width: 400px;
     }
+    #responsive-image-3 {
+        content: url('images/Art\ History\ Notes-approve-mobile.png');
+        max-width: 400px;
+    }
+
     #responsive-image-4 {
         content: url('images/Art\ History\ Notes-primary-flow-mobile.png');
     }
